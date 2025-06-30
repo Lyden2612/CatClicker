@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="cc_css.css" />
+<title>Cat clicker</title>
+</head>
+<body>
+<div id="pai">
+<div id="header-container">
+  <p id="hia" class="menu napic">Hello! this is a cat clicker</p>
+  <img src="avcc.jpg" id="avcc" class="menu">
+</div>
+</div>
+<div class="buttons-container menu">
+  <button id="inf" class="button-mn" onclick="inf()">Information</button>
+  <button id="play" class="button-mn" onclick="play()">play</button>
+  <button id="trp" class="button-mn" onclick="troph()">trophies</button>
+</div>
+<div class="buttons-container play">
+<p class="play">You clicked <span class="count-num" id="span">0</span> times</p>
+</div>
+<button class="click-btn play" id="click">Click</button>
+<p id="result"></p>
+
+<!-- Картки з котами -->
+<div class="cats-wrapper">
+  <img src="cat (1).jpg" id="cat1" class="pht">
+  <img src="cat (2).jpg" id="cat2" class="pht">
+  <img src="cat (3).jpg" id="cat3" class="pht">
+  <img src="cat (4).jpg" id="cat4" class="pht">
+  <img src="cat (5).jpg" id="cat5" class="pht">
+  <img src="cat (6).jpg" id="cat6" class="pht">
+  <img src="cat (7).jpg" id="cat7" class="pht">
+  <img src="cat (8).jpg" id="cat8" class="pht">
+  <img src="cat (9).jpg" id="cat9" class="pht">
+  <img src="cat (10).jpg" id="cat10" class="pht">
+  <img src="cat (11).jpg" id="cat11" class="pht">
+  <img src="cat (12).jpg" id="cat12" class="pht">
+  <img src="cat (13).jpg" id="cat13" class="pht">
+  <img src="cat (14).jpg" id="cat14" class="pht">
+  <img src="cat (15).jpg" id="cat15" class="pht">
+  <img src="cat (16).jpg" id="cat16" class="pht">
+  <img src="cat (17).jpg" id="cat17" class="pht">
+  <img src="cat (18).jpg" id="cat18" class="pht">
+  <img src="cat (19).jpg" id="cat19" class="pht">
+  <img src="cat (20).jpg" id="cat20" class="pht">
+    <img src="cat (21).jpg" id="cat21" class="pht">
+  <img src="cat (22).jpg" id="cat22" class="pht">
+  <img src="cat (23).jpg" id="cat23" class="pht">
+  <img src="cat (24).jpg" id="cat24" class="pht">
+  <img src="cat (25).jpg" id="cat25" class="pht">
+  <img src="cat (26).jpg" id="cat26" class="pht">
+  <img src="cat (27).jpg" id="cat27" class="pht">
+  <img src="cat (28).jpg" id="cat28" class="pht">
+  <img src="cat (29).jpg" id="cat29" class="pht">
+  <img src="cat (30).jpg" id="cat30" class="pht">
+    <img src="cat (31).jpg" id="cat31" class="pht">
+  <img src="cat (32).jpg" id="cat32" class="pht">
+  <img src="cat (33).jpg" id="cat33" class="pht">
+  <img src="cat (34).jpg" id="cat34" class="pht">
+  <img src="cat (35).jpg" id="cat35" class="pht">
+  <img src="cat (36).jpg" id="cat36" class="pht">
+  <img src="cat (37).jpg" id="cat37" class="pht">
+  <img src="cat (38).jpg" id="cat38" class="pht">
+  <img src="cat (39).jpg" id="cat39" class="pht">
+  <img src="cat (40).jpg" id="cat40" class="pht">
+    <img src="cat (41).jpg" id="cat41" class="pht">
+  <img src="cat (42).jpg" id="cat42" class="pht">
+  <img src="cat (43).jpg" id="cat43" class="pht">
+  <img src="cat (44).jpg" id="cat44" class="pht">
+  <img src="cat (45).jpg" id="cat45" class="pht">
+  <img src="cat (46).jpg" id="cat46" class="pht">
+  <img src="cat (47).jpg" id="cat47" class="pht">
+  <img src="cat (48).jpg" id="cat48" class="pht">
+  <img src="cat (49).jpg" id="cat49" class="pht">
+  <img src="cat (50).jpg" id="cat50" class="pht">
+</div>
+
+<!-- Трофеї -->
+<div class="trp">
+<div class="trophies-wrapper">
+  <img class="trp" id="1img" src="ukn.jpg"/>
+<!-- Progress Bar 1 (до 100) -->
+<div class="trophies-wrapper">
+  <div class="progress-container">
+    <div class="progress-label">clicks: <span id="cnt1">0</span> / 100</div>
+    <div class="progress-bar">
+      <div id="bar1" class="progress-bar-fill"></div>
+    </div>
+  </div>
+
+  <img class="trp" id="2img" src="ukn.jpg"/>
+  <!-- Progress Bar 2 (до 1000) -->
+  <div class="progress-container">
+    <div class="progress-label">clicks: <span id="cnt2">0</span> / 1000</div>
+    <div class="progress-bar">
+      <div id="bar2" class="progress-bar-fill"></div>
+    </div>
+  </div>
+  <img class="trp" id="3img" src="ukn.jpg" />
+  <!-- Progress Bar 3 (до 10000) -->
+  <div class="progress-container">
+    <div class="progress-label">clicks: <span id="cnt3">0</span> / 10000</div>
+    <div class="progress-bar">
+      <div id="bar3" class="progress-bar-fill"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Інформація -->
+<h1 id="inft" class="inf">
+This is a cat clicker - a place to relax, admire cute and funny photos of cats with one click of a button.
+</h1>
+<button onclick="rttm()" id="rttm" class="return-btn play trp inf">return to the menu</button>
+
+<!-- Скрипт -->
+<script src="cc_js.js"></script>
+</body>
+</html>
